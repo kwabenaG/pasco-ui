@@ -10,6 +10,9 @@ function Layout({title, description, keyword, children}) {
                 <title>{title}</title>
                 <meta name="description" content={description} />
                 <meta name="keyword" content={keyword} />
+                <style>
+                    @import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+                </style>
             </Head>    
 
             <div>{children}</div>
