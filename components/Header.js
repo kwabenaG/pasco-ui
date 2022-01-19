@@ -54,10 +54,12 @@ export default function Header() {
             <div className="">
                 <div className="flex min-w-fit justify-between py-2 px-2 sm:flex-row md:hidden lg:hidden">
                     <Link href="/">
-                        <a className="flex items-center text-3xl text-white tracking-widest uppercase">Pasada {isActive}</a>
+                        <a className="flex items-center text-3xl text-white tracking-widest uppercase">Pasada</a>
                     </Link>
                     <div className="mobile-menu" >
-                        <button onClick={handler}><MobileMenu href="/home" Icon={MenuAlt3Icon} /></button>
+                        <button onClick={() => {}} type="button" className="inline-flex ">
+                            <MobileMenu href="/home" Icon={MenuAlt3Icon} />
+                        </button>
                     </div>
                     
                 </div>

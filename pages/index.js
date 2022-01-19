@@ -10,6 +10,7 @@ import Image from 'next/image';
 import Header from '../components/Header';
 import Emphasis from '../components/Main/Emphasis';
 import Search from '../components/Main/Search';
+import Reason from '../components/Reason';
 import Section from '../components/Section';
 import Footer from '../components/Footer';
 import FooterExt from '../components/FooterExt';
@@ -38,9 +39,9 @@ export default function Home() {
             
             {/* section */}
             <div classNam="flex">
+              <Reason />
               <Section />
             </div>
-            
         </main>
          {/* footer */}
          <div>

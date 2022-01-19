@@ -9,21 +9,21 @@ export default function FooterExt() {
 
            <div className="flex justify-center">
                 <div className="m-2 ">
-                        <a href="#" className="text-right italic ">tishbe developers</a>
+                        <a href="#" className="text-right italic text-gray-400 font-front-page-text-font text-sm tracking-widest">tishbe developers</a>
                 </div>
             </div>
 
             {/* copyrights */}
             <div className="flex ">
                 <div className="m-2 ">
-                        <p className="text-right">&copy; Copyrights 2022</p>
+                        <p className="text-right text-gray-400 text-sm font-front-page-text-font">&copy; Copyrights 2022</p>
                 </div>
             </div>
 
             {/* made with love */}
             <div>
                 <div className=" flex m-2">
-                        <p>Made with love</p>
+                        <p className="text-gray-400 font-front-page-text-font text-sm">Made with love</p>
                 </div>
             </div>
         </div>

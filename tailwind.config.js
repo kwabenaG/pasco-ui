@@ -15,7 +15,8 @@ module.exports = {
     },
     extend: {
       backgroundImage: {
-        "pasco-bg": "url('/images/bg-student2.png')"
+        "pasco-bg": "url('/images/bg-student2.png')",
+        "reason-bg": "url('/images/bg-reason.jpg')"
       },
       colors: {
         'front-page-text-color': '#F04444',
