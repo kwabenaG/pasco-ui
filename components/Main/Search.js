@@ -22,26 +22,24 @@ function Search() {
 
 
     return (
-        <div className="static flex -ml-10 mr-10 mt-16 sm:min-w-full">
+        <div className="relative flex mt-16">
             <span className="flex items-center absolute py-3 px-2">
-            <svg xmlns="http://www.w3.org/2000/svg" className="text-slate h-5  " fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-            </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" className="text-slate h-5  " fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                </svg>
             </span>
-            <form action="#" className="flex min-w-full ">
-                <input name = "search" className= "h-20 pl-10 pr-2 text-gray-600 rounded-tl-full rounded-bl-full placeholder-slate focus:outline-none placeholder:italic focus:border-red-500 focus:ring-1 shadow-md md:w-screen" 
-                type='text' placeholder='Search any past question... Use course code to search eg. 451 Eng Maths' />
-                {/* school type */}
-                <select 
-                name = "school_type" className= "h-20 pl-2 pr-2  focus:outline-none focus:border-red-500 focus:ring-1 shadow-md" 
-                type='text'>
-                    <option value={value} className="p-2 tracking-widest italic text-gray-300">Choose Your School</option>
-                    <option value="knust" className="tracking-widest">KNUST</option>
-                    <option value="ug" className="tracking-widest">UG</option>
-                    <option value="upsa" className="tracking-widest">UPSA</option>
-                    <option value="ucc" className="tracking-widest">UCC</option>
+            <form action="#" className="flex flex-col space-y-6 w-full items-center md:flex ">
+
+                <input name="#" className="flex h-10 rounded-tl-full rounded-bl-full rounded-tr-full rounded-br-full md:flex " />
+                <select className="flex h-10 p-2 bg-white text-gray-700 rounded-tl-lg rounded-bl-lg rounded-tr-lg rounded-br-lg">
+                    <option value="Choose School">Choose School</option>
+                    <option value="knust">KNUST</option>
+                    <option value="ucc">UCC</option>
+                    <option value="upsa">UPSA</option>
+
                 </select>
-                <button onClick={logValue()} className="flex items-center px-4 bg-red-500 h-20 text-white rounded-br-full shadow-lg rounded-tr-full font-front-page-text-font tracking-wide text-lg ">Search</button>
+                <button type="submit" className="flex text-white bg-front-page-text-color px-4 py-2 rounded-lg md:flex-col">Search Past Questions</button>
+           
             </form>
         </div>
     )
